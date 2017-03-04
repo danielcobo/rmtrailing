@@ -7,7 +7,13 @@ __Otherwise:__
 you may want to use .replace() or 
 a more specific module
 
-# Example
+
+### How to use
+
+### Prerequisite
+None
+
+### Example
 ```javascript
 var slash = '/';
 
