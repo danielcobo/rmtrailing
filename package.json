@@ -1,6 +1,6 @@
 {
   "name": "rmtrailing",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Removes dynamic trailing substring",
   "main": "index.js",
   "scripts": {
