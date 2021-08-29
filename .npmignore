@@ -1,0 +1,9 @@
+*.test.js
+_*
+.*
+*.log
+*.md
+coverage
+reports
+rollup.config.js
+stryker.conf.json
