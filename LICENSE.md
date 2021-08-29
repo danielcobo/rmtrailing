@@ -1,4 +1,4 @@
-Copyright Tidy Source (Daniel Cobo) and other contributors, https://www.tidysource.com
+Copyright Daniel Cobo and other contributors, https://www.danielcobo.com
 
 This software may consist of voluntary contributions made by many
 individuals. For exact contribution history, see the revision history
