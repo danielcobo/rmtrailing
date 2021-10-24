@@ -19,10 +19,9 @@ module.exports = function rmTrailing(str, substr, flag) {
     input = str.toLocaleLowerCase();
     sub = substr.toLocaleLowerCase();
   }
-  let pos = input.lastIndexOf(sub);
-  while (pos > -1 && input.slice(pos) === sub) {
-    input = input.slice(0, pos);
-    pos = input.lastIndexOf(sub);
+
+  while (input.slice(-sub.length) === sub) {
+    input = input.slice(0, -sub.length);
   }
 
   return input;
