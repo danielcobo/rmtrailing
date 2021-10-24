@@ -1,19 +1,29 @@
 /**
  * Remove trailing substring
+ * @public
  * @param {string} str - input string
- * @param {string} substr - substring to remove
- * @param {string} flag - regex flag (for example i to ignore Case, see: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/flags)
- * @returns {string}
+ * @param {string} substr - leading string to remove
+ * @param {boolean} [flag=false] - true/false for case insensitive
+ * @returns {string} - input string without the leading substring
  */
-const rmTrailing = function rmTrailing(str, substr, flag) {
+module.exports = function rmTrailing(str, substr, flag) {
   if (typeof substr !== 'string') {
     throw new TypeError(
       'Substring argument must be a string, instead received: ' + typeof substr
     );
   }
-  const pattern = '[' + substr + ']+$';
-  const regex = RegExp(pattern + '$', flag);
-  return str.replace(regex, '');
-};
 
-module.exports = rmTrailing;
+  let input = str;
+  let sub = substr;
+  if (flag) {
+    input = str.toLocaleLowerCase();
+    sub = substr.toLocaleLowerCase();
+  }
+  let pos = input.lastIndexOf(sub);
+  while (pos > -1 && input.slice(pos) === sub) {
+    input = input.slice(0, pos);
+    pos = input.lastIndexOf(sub);
+  }
+
+  return input;
+};
