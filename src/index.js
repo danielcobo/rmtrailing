@@ -6,6 +6,11 @@
  * @returns {string}
  */
 const rmTrailing = function rmTrailing(str, substr, flag) {
+  if (typeof substr !== 'string') {
+    throw new TypeError(
+      'Substring argument must be a string, instead received: ' + typeof substr
+    );
+  }
   const pattern = '[' + substr + ']+$';
   const regex = RegExp(pattern + '$', flag);
   return str.replace(regex, '');
