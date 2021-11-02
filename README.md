@@ -31,13 +31,13 @@ No requierments, just works.
 Install using the terminal:
 
 ```cli
-npm install rmtrailing
+npm install @danielcobo/rmtrailing
 ```
 
 Require the module:
 
 ```js
-const rmtrailing = require('rmtrailing');
+const rmtrailing = require('@danielcobo/rmtrailing');
 ```
 
 <sub>**Note:** In case you're wondering, **@danielcobo/** is just a [namespace scope](https://docs.npmjs.com/about-scopes/) - an NPM feature. Scopes make it easier to name modules and improve [security](https://github.blog/2021-02-12-avoiding-npm-substitution-attacks/).</sub>
@@ -47,13 +47,13 @@ const rmtrailing = require('rmtrailing');
 Declare it as a global variable named rmtrailing by including this script before any script you want to use it in:
 
 ```html
-<script src="https://cdn.jsdelivr.net/npm/rmtrailing@1/dist/iife/bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@danielcobo/rmtrailing@1/dist/iife/rmtrailing.min.js"></script>
 ```
 
 Or import it as an [ECMAScript module](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import):
 
 ```js
-import * as rmtrailing from 'https://cdn.jsdelivr.net/npm/rmtrailing@1/dist/esm/bundle.min.js';
+import * as rmtrailing from 'https://cdn.jsdelivr.net/npm/@danielcobo/rmtrailing@1/dist/esm/rmtrailing.min.js';
 ```
 
 Also, feel free to download the file if you prefer not to use [jsdelivr](https://www.jsdelivr.com). In that case just replace the url with the relative file path.
