@@ -38,7 +38,15 @@ test('Escape char will work', function () {
 });
 
 test('Throws for non-string str argument', async function () {
-  expect(() => rmTrailing(true, slash)).toThrow();
+  expect(() => rmTrailing(true, slash)).toThrow(
+    '1st argument must be a string, instead received: ' + typeof true
+  );
+});
+
+test('Throws for non-string substr argument', async function () {
+  expect(() => rmTrailing(slash, true)).toThrow(
+    '2nd argument must be a string, instead received: ' + typeof true
+  );
 });
 
 test('Throws for non-string substr argument', async function () {

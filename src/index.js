@@ -7,9 +7,14 @@
  * @returns {string} - input string without the leading substring
  */
 module.exports = function rmTrailing(str, substr, flag) {
+  if (typeof str !== 'string') {
+    throw new TypeError(
+      '1st argument must be a string, instead received: ' + typeof str
+    );
+  }
   if (typeof substr !== 'string') {
     throw new TypeError(
-      'Substring argument must be a string, instead received: ' + typeof substr
+      '2nd argument must be a string, instead received: ' + typeof substr
     );
   }
 
