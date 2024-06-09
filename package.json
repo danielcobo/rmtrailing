@@ -1,42 +1,42 @@
 {
- "name": "@danielcobo/rmtrailing",
- "version": "1.0.8",
- "description": "Removes dynamic trailing substring",
- "main": "src/index.js",
- "scripts": {
-  "test": "jest --collectCoverage",
-  "testing": "jest --watch --collectCoverage",
-  "mutation": "npx stryker run",
-  "docs": "docs",
-  "patch": "git push && npm version patch && npm publish",
-  "minor": "git push && npm version minor && npm publish",
-  "major": "git push && npm version major && npm publish",
-  "prepublishOnly": "./node_modules/.bin/rollup -c"
- },
- "repository": {
-  "type": "git",
-  "url": "git+https://github.com/danielcobo/rmtrailing.git"
- },
- "keywords": [
-  "trailing",
-  "string",
-  "substring",
-  "dynamic",
-  "remove"
- ],
- "author": "Daniel Cobo",
- "license": "MIT",
- "bugs": {
-  "url": "https://github.com/danielcobo/rmtrailing/issues"
- },
- "homepage": "https://github.com/danielcobo/rmtrailing#readme",
- "devDependencies": {
-  "@danielcobo/docs": "^1.0.19",
-  "@rollup/plugin-commonjs": "^26.0.1",
-  "@stryker-mutator/core": "^8.2.6",
-  "@stryker-mutator/jest-runner": "^8.2.6",
-  "jest": "^27.2.5",
-  "rollup": "^4.18.0",
-  "rollup-plugin-terser": "^7.0.2"
- }
+  "name": "@danielcobo/rmtrailing",
+  "version": "1.0.8",
+  "description": "Removes dynamic trailing substring",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "jest --collectCoverage",
+    "testing": "jest --watch --collectCoverage",
+    "mutation": "npx stryker run",
+    "docs": "docs",
+    "patch": "git push && npm version patch && npm publish",
+    "minor": "git push && npm version minor && npm publish",
+    "major": "git push && npm version major && npm publish",
+    "prepublishOnly": "./node_modules/.bin/rollup -c"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danielcobo/rmtrailing.git"
+  },
+  "keywords": [
+    "trailing",
+    "string",
+    "substring",
+    "dynamic",
+    "remove"
+  ],
+  "author": "Daniel Cobo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/danielcobo/rmtrailing/issues"
+  },
+  "homepage": "https://github.com/danielcobo/rmtrailing#readme",
+  "devDependencies": {
+    "@danielcobo/docs": "^1.0.19",
+    "@rollup/plugin-commonjs": "^26.0.1",
+    "@stryker-mutator/core": "^8.2.6",
+    "@stryker-mutator/jest-runner": "^8.2.6",
+    "jest": "^27.2.5",
+    "rollup": "^2.59.0",
+    "rollup-plugin-terser": "^7.0.2"
+  }
 }
